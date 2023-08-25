@@ -25,13 +25,4 @@ def writeLong(v):
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
-# read shellscript as bytestring, use writeBytes(payload) to write it out
-with open("shell.bin", "rb") as f:
-    payload = f.read()
-
-# Here we have the address of the mutex struct.
-pmutex = int(sys.stdin.readline(), 16)
-
-writeStr("Header\n")
-
-writeStr("Body\n")
+# TODO: Implement your solution here.

@@ -25,8 +25,5 @@ def writeLong(v):
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
-# Here we have the address of the main function.
-pmain = int(sys.stdin.readline(), 16)
+# TODO: Implement your solution here.
 
-writeStr("Name\n")
-writeStr("Password\n")

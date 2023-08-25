@@ -1,4 +1,4 @@
-# Exercise 1
+# Task 1
 
 The applications requires two arguments: (1) a username and (2) the
 number of chars that should be printed back on screen
@@ -29,7 +29,7 @@ that is stored internally.  Write your solution in the file `solution1.txt`.
 For instance, if you used `./main.elf hello 5` to leak the password, then your
 `solution1.txt` file should look like
 ```
-# exercise 1
+# task 1
 # question 1
 # Forge two command line arguments that
 # make the application to leak the password that is

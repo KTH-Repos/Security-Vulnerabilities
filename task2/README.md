@@ -1,4 +1,4 @@
-# Exercise 2
+# Task 2
 
 The application requires two arguments: (1) a username and (2) a password.
 ```
@@ -36,7 +36,7 @@ Write your solution in the file `solution2.txt`.
 For instance, if you used `./main.elf hello 12345`,
 then your `solution2.txt` file should look like
 ```
-# exercise 2
+# task 2
 # problem 1
 # Forge two command line arguments that
 # allows you to be authenticated

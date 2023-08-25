@@ -1,4 +1,4 @@
-# Exercise 3
+# Task 3
 
 The application receives two values from the standard input (both terminated by
 a newline): (1) name and (2) password.

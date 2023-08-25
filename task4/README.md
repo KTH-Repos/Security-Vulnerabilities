@@ -1,4 +1,4 @@
-# Exercise 4
+# Task 4
 
 The application receives two values from the standard input (both terminated by
 a newline): (1) mail subject and (2) mail body.
@@ -19,12 +19,12 @@ You won 1000 SEK
 
 Look at the source code, notice that the developer has forgotten to turn off
 the `DEBUG` flag (again), causing the program to leak the location of the
-global variables `mutex` and `cond` to standard error. Also, note that the
+stack variables `mail_subject` to standard error. Also, note that the
 location of variables are also affected by ASLR.
 
 ## Problem 4.1
 
-This exercise includes the shell code `shell.py`.  It is generated using `make
+This task includes the shell code `shell.py`.  It is generated using `make
 shell.bin`, which produce the binary file `shell.bin`. If the shell-code is
 executed, it invokes `exec` and execute a `cat` of `/etc/passwd`, revealing the
 users of the system.
@@ -35,8 +35,8 @@ shell-code.
 Since you probably need to produce input that contains "special" bytes, use the
 following procedure:
 
-1. complete the python script `solution3.py`, which reads the memory location
-   of `mutex` (or `cond`) and then prints the forged output on the standard
+1. complete the python script `solution4.py`, which reads the memory location
+   of `mail_subject` and then prints the forged output on the standard
    output
 2. execute `./solution4.py < my.pipe | ./main.elf 2>my.pipe` (or `make attack`)
    which feeds your `solution4.py` with the `main.elf` standard error output,
@@ -52,8 +52,7 @@ To test your solution execute `./test.py`.
 
 Debug the program using GDB and find the distance between the location of
 
-1. the variable `mail_subject` and `saved rip`, and 
-2. the variable `mutex` (or `cond`) and `mail_body`.
+1. the variable `mail_subject`, `saved rip`, and `mail_body`.
 
 Do not worry if the program crashes after leaking the `passwd` file.
 
