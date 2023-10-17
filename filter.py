@@ -7,6 +7,6 @@ def filter_text(text):
     for rule in rules:
         words = rule.split(" ")
         key = words[1]
-        if len(key) == 1:
+        if len(key) < 2:
             return False
     return True
