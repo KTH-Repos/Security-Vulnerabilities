@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 def filter_text(text):
-    # Your solution.
+    # Your solution
     lines = text.splitlines()
     rules = [s for s in lines if "#" in s]
     for rule in rules:
