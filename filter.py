@@ -9,4 +9,4 @@ def filter_text(text):
         key = words[1]
         if len(key) == 1:
             return False
-        return True
+    return True
