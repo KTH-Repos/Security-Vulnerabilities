@@ -10,7 +10,7 @@ def extract(var):
     
 
 def check(filename):
-    # Your solution.
+    # Your solution
     lines = []
     with open(filename, "r") as file:
         for line in file:
