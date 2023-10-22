@@ -4,6 +4,8 @@ def filter_text(text):
     # Your solution
     lines = text.splitlines()
     rules = [s for s in lines if "#" in s]
+    if len(rules) == 0:
+        return True
     counter = 0
     for rule in rules:
         words = rule.split(" ")
