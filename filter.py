@@ -12,5 +12,6 @@ def filter_text(text):
             counter = counter + 1
     if counter == len(rules):
         return True
-    
+    else:
+        return False
     
