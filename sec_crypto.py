@@ -6,7 +6,7 @@ class SecCrypto():
             cache.write_address(T_address+a, T[a])
     
     def feistel_encrypt(self, cache, msg, key):
-        # Replace with your solution.
+        # Replace with your solution
         l0 = ord(msg[0])
         r0 = ord(msg[1])
         r1 = cache.read_address(r0)
