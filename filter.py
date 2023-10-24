@@ -16,7 +16,7 @@ def filter_text(text):
     rules = [s for s in lines if "#" in s]
     extractedRules = extractRules(rules)
     for key in extractedRules:
-        for value in extractedRules:
-            if key == value:
+        for value in extractedRules.values():
+            if key in value:
                 return False
     return True
