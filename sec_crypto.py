@@ -15,4 +15,5 @@ class SecCrypto():
         r2 = cache.read_address(r1)
         r2 = l1 ^ ord(key[1]) ^r2[0]
         l2 = l1
+        cache.cache = [{"tag":None, "value":None} for line in range(cache_lines)]
         return chr(l2)+chr(r2)
