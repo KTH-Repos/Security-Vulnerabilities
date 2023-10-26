@@ -25,7 +25,7 @@ def writeLong(f, v):
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
-# TODO: Implement your solution here.
+# TODO: Implement your solution here
 data = int(input(), 16) 
 with open("t.bin", "wb") as file:
     writeStr(file, "T"*24)
