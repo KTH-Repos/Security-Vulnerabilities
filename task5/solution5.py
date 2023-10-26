@@ -26,3 +26,14 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 # TODO: Implement your solution here.
+data = int(input(), 16) 
+with open("t.bin", "wb") as file:
+    writeStr(file, "T"*24)
+    A = data + 222 
+    file.write(A.to_bytes(8, 'little'))
+    pwdA = data + 3439 
+    file.write(pwdA.to_bytes(8, 'little'))
+    puts = data + 105 
+    file.write(puts.to_bytes(8, 'little'))
+
+print("t.bin")

